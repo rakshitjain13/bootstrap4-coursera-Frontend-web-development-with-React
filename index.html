@@ -29,7 +29,7 @@
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"> Contact</a></li>
                 </ul>    
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <a class="loginbtn">
                     <span class="fa fa-sign-in"></span> Login</a>
                 </span>
             </div>  
@@ -84,7 +84,7 @@
                     <img class="img-fluid align" src="img/logo.png">
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
-                   <a class="btn btn-warning nav-link" data-toggle="modal" data-target="#modalreserve">Reserve table</a>
+                   <a class="btn btn-warning nav-link btnreserve" >Reserve table</a>
             </div>
         </div>
      </div>
@@ -379,24 +379,7 @@
  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
- <script>
-    $(document).ready(function(){
-        $("#mycarousel").carousel( { interval: 2000 } );
-        $("#carouselButton").click(function(){
-                if ($("#carouselButton").children("span").hasClass('fa-pause')) {
-                    $("#mycarousel").carousel('pause');
-                    $("#carouselButton").children("span").removeClass('fa-pause');
-                    $("#carouselButton").children("span").addClass('fa-play');
-                }
-                else if ($("#carouselButton").children("span").hasClass('fa-play')){
-                    $("#mycarousel").carousel('cycle');
-                    $("#carouselButton").children("span").removeClass('fa-play');
-                    $("#carouselButton").children("span").addClass('fa-pause');                    
-                }
-            });
-   
-    });
-</script>
+ <script src="js/scrips.js"></script>
 
 </body>
 

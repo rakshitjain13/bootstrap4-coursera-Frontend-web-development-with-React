@@ -70,3 +70,16 @@ body{
     bottom: 0px;
     z-index: 1;
 }
+.modal-header{
+    background: $background-dark;
+    color: white;
+}
+.modal-body{
+    background: $background-pale;
+}
+.close{
+    color: ivory;
+  }
+  
+
+  
